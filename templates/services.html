@@ -1,241 +1,488 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <title>EUDAT B2ACCESS connected Services</title>
-    <style>
-        table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-        }
-    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="shortcut icon" href="../../img/favicon16_16.png" />
+    <link rel="stylesheet" href="../../css/server.css" type="text/css" media="screen" />
+    <script src="../js/b2drop-include.js"></script>>
 </head>
-<body>
-<h1>Services connected with EUDAT B2ACCESS</h1>
-    <table>
-        <tr>
-            <th>CDI Service</th>
-            <th>CDI Service Description</th>
-            <th>General Provider</th>
-            <th>Privacy Statement</th>
-        </tr>
-        <tr>
-            <td><a href="https://b2drop.eudat.eu">B2DROP</a></td>
-            <td><p>B2DROP is a secure and trusted data exchange service for researchers and scientists to keep their research data synchronized and up-to-date and to exchange with other researchers.</p></td>
-            <td>EUDAT ltd &amp; JUELICH</td>
-            <td><p><a href="https://b2drop.eudat.eu/themes/b2drop/data-privacy-statement.html" target="_blank">Data Privacy Statement</a></p></td>
-        </tr>
-        <tr>
-            <td><a href="" target="_blank">B2DROP fi</a></td>
-            <td><p>Community instance of B2DROP offered by CSC to members of finish universities.</p></td>
-            <td>CSC</td>
-            <td><p><a href="https://confluence.csc.fi/display/EUDATCSCServices/EUDAT+Privacy+policy" target="_blank">Data Privacy Statement</a></p></td>
-        </tr>
-        <tr>
-            <td><a href="https://b2gether.eudat.eu/" target="_blank">B2GETHER</a></td>
-            <td><p>EUDAT Collaborative Working Area</p></td>
-            <td>Trust-IT</td>
-            <td><p><!--a href="" target="_blank">Data Privacy Statement</a--></p></td>
-        </tr>
-        <tr>
-            <td><a href="https://hdf-cloud.fz-juelich.de" target="_blank">B2HOST JSC</a></td>
-            <td><p>B2HOST resources provided by Jülich Supercomputing Centre.</p></td>
-            <td>JUELICH</td>
-            <td><p><a href="https://hdf-cloud.fz-juelich.de/static/dashboard/privacy-statement.html" target="_blank">Data Privacy Statement</a></p></td>
-        </tr>
-        <tr>
-            <td><a href="https://b2note.eudat.eu/" target="_blank">B2NOTE</a></td>
-            <td><p></p></td>
-            <td>EUDAT ltd &amp; BSC</td>
-            <td><p><!--a href="" target="_blank">Data Privacy Statement</a--></p></td>
-        </tr>
-        <tr>
-            <td><a href="https://b2share.eudat.eu/" target="_blank">B2SHARE</a></td>
-            <td><p>B2SHARE is the EUDAT user-friendly, reliable and trustworthy service for researchers, scientific communities and citizen scientists to store and publish finalized static research data from diverse contexts.<br/>B2SHARE maintains small and medium sized research objects by itself, but it can also be used to register and publish information about larger data objects locating in other storage services.</p></td>
-            <td>EUDAT ltd &amp; CSC</td>
-            <td><p><a href="https://confluence.csc.fi/display/EUDATCSCServices/EUDAT+Privacy+policy" target="_blank">Data Privacy Statement</a></p></td>
-        </tr>
-        <tr>
-            <td><a href="https://b2share.fz-juelich.de/" target="_blank">B2SHARE JSC</a></td>
-            <td><p>Community instance of B2SHARE offered by Jülich Supercomputing Centre to Forschungszentrum Jülich and related communities.</p></td>
-            <td>JUELICH</td>
-            <td><p><a href="https://b2share.fz-juelich.de/data-privacy-statement.html" target="_blank">Data Privacy Statement</a></p></td>
-        </tr>
-        <tr>
-            <td><a href="https://b2share-testing.fz-juelich.de" target="_blank">B2SHARE JSC test</a></td>
-            <td><p>Testing community instance of B2SHARE offered by Jülich Supercomputing Centre to Forschungszentrum Jülich and related communities. This instance is only for testing purpose. It does not provide PIDs and long term preservation.</p></td>
-            <td>JUELICH</td>
-            <td><p><a href="https://b2share-testing.fz-juelich.de/data-privacy-statement.html" target="_blank">Data Privacy Statement</a></p></td>
-        </tr>
-        <tr>
-            <td><a href="" target="_blank">B2SHARE stress test</a></td>
-            <td><p>Non public instance of B2SHARE used for stress testing.</p></td>
-            <td>CSC</td>
-            <td><p><a href="https://confluence.csc.fi/display/EUDATCSCServices/EUDAT+Privacy+policy" target="_blank">Data Privacy Statement</a></p></td>
-        </tr>
-        <tr>
-            <td><a href="" target="_blank">B2SHARE test</a></td>
-            <td><p>Non public instance of B2SHARE used for tests of new features and versions.</p></td>
-            <td>CSC</td>
-            <td><p><a href="https://confluence.csc.fi/display/EUDATCSCServices/EUDAT+Privacy+policy" target="_blank">Data Privacy Statement</a></p></td>
-        </tr>
-        <tr>
-            <td><a href="" target="_blank">B2SHARE training</a></td>
-            <td><p>Training instance of EUDAT B2SHARE B2SHARE is the EUDAT user-friendly, reliable and trustworthy service for researchers, scientific communities and citizen scientists to store and publish finalized static research data from diverse contexts. B2SHARE maintain small and medium sized research objects by itself, but it can also be used to register and publish information about larger data objects locating in other storage services.</p></td>
-            <td>EUDAT ltd &amp; CSC</td>
-            <td><p><a href="https://confluence.csc.fi/display/EUDATCSCServices/EUDAT+Privacy+policy" target="_blank">Data Privacy Statement</a></p></td>
-        </tr>
-        <tr>
-            <td><a href="https://dpmgr.eudat.eu/" target="_blank">DPM</a></td>
-            <td><p>DPM is a tool that provides data policy management functionality. It can be used by data managers to define data policies, store them and share them with the data service providers, who will enforce them; service integrators to integrate a third-party service with the DPM relying on the XML DB API; B2SAFE service administrators to have a view on the policies defined by a community data manager -They can download and enforce them and provide feedback to the data managers.</p></td>
-            <td>EUDAT ltd &amp; SIGMA2</td>
-            <td><p><a href="https://dpmgr.eudat.eu/data-privacy-statement.html" target="_blank">Data Privacy Statement</a></p></td>
-        </tr>
-        <tr>
-            <td><a href="https://dp.eudat.eu" target="_blank">DPMT</a></td>
-            <td><p>The DPMT is <a href="https://www.eudat.eu/cdi" target="_blank">EUDAT CDIs</a> e-Infrastructure registry for managing and distributing information about service providers, the providers' service and resource offers, the actually provided service instances (RegisteredServices) and the related service components (RegisteredServiceComponents). It obtains information about products offered by EUDAT from the EUDAT Service Catalog that is managed via the EUDAT Service Portfolio Management Tool (SPMT).<br/> The DPMT compise a customer management data base in that the CDI customers (organisations and representing persons) and their business cases (data projects) are registered. The accounted usage of storage and compute resources are mapped to the data projects.</p></td>
-            <td>EUDAT ltd &amp; MPCDF</td>
-            <td><p><a href="https://dp.eudat.eu/help/privacy-statement" target="_blank">Data Privacy Statement</a></p></td>
-        </tr>
-        <tr>
-            <td><a href="https://easydmp.eudat.eu/" target="_blank">EasyDMP</a></td>
-            <td><p>EASYDMP is a service that simplifies the task of creating data management plans.</p></td>
-            <td>SIGMA2</td>
-            <td><p><a href="https://easydmp.eudat.eu/privacy/" target="_blank">Data Privacy Statement</a></p></td>
-        </tr>
-        <tr>
-            <td><a>EDUUNI</a></td>
-            <td><p>Eduuni is a collaboration service environment for flexible and secure collaboration across organisation and ecosystem boundaries. It is hosting the CDI confluence wiki and the CDI Jira ticketing system.</p></td>
-            <td>EDUUNI via CSC</td>
-            <td><p><a href="https://wiki.eduuni.fi/display/info/Eduuni+Privacy+Policy" target="_blank">Data Privacy Statement</a></p></td>
-        </tr>
-        <tr>
-            <td><a href="https://gitlab.eudat.eu" target="_blank">GitLab</a></td>
-            <td><p>GitLab is the first single application for the entire DevOps lifecycle.</p></td>
-            <td>EUDAT ltd &amp; KIT</td>
-            <td><p><a href="https://gitlab.eudat.eu/data-privacy-statement" target="_blank">Data Privacy Statement</a></p></td>
-        </tr>
-        <tr>
-            <td><a href="https://helpdesk.eudat.eu/index.html" target="_blank">Helpdesk</a></td>
-            <td><p>helpdesk.eudat.eu, service providing the helpdesk to all EUDAT services</p></td>
-            <td>EUDAT ltd &amp; BSC</td>
-            <td><p><!--a href="" target="_blank">Data Privacy Statement</a--></p></td>
-        </tr>
-        <tr>
-            <td><a>HTTP API BSC</a></td>
-            <td><p></p></td>
-            <td>BSC</td>
-            <td><p><!--a href="" target="_blank">Data Privacy Statement</a--></p></td>
-        </tr>
-        <tr>
-            <td><a>HTTP API CINECA</a></td>
-            <td><p>The B2STAGE service allows data staging, i.e. data transfer into and out of EUDAT data nodes. Data staged into EUDAT are assigned a unique Persistent Identified (PID). The HTTP APIs allow for access to both data and metadata stored into B2SAFE.</p></td>
-            <td>CINECA</td>
-            <td><p><a href="https://www.cineca.it/en/content/policy" target="_blank">Data Privacy Statement</a></p></td>
-        </tr>
-        <tr>
-            <td><a href="https://poem-eudat.argo.grnet.gr" target="_blank">Poem</a></td>
-            <td><p>This service is used in order to define checks (probes) and associate them to service types. Each grouping of checks and service types forms a POEM profile.</p></td>
-            <td>EUDAT ltd &amp; GRNET</td>
-            <td><p><!--a href="" target="_blank">Data Privacy Statement</a--></p></td>
-        </tr>
-        <tr>
-            <td><a href="https://poem-sdc.argo.grnet.gr" target="_blank">Poem SDC</a></td>
-            <td><p>This service is used in order to define checks (probes) and associate them to     service types. Each grouping of checks and service types forms a POEM profile.</p></td>
-            <td>EUDAT ltd &amp; GRNET</td>
-            <td><p><!--a href="" target="_blank">Data Privacy Statement</a--></p></td>
-        </tr>
-        <tr>
-            <td><a href="" target="_blank">SDC Demo</a></td>
-            <td><p></p></td>
-            <td></td>
-            <td><p><!--a href="" target="_blank">Data Privacy Statement</a--></p></td>
-        </tr>
-        <tr>
-            <td><a href="https://sp.eudat.eu" target="_blank">SPMT</a></td>
-            <td><p>The Service Portfolio/Catalogue Management Tool (SPMT)  manages definitions of the different classes of services and service components and is designed following the FitSM service portfolio management process.</p></td>
-            <td>EUDAT ltd &amp; GRNET</td>
-            <td><p><a href="https://sp.eudat.eu/privacy" target="_blank">Data Privacy Statement</a></p></td>
-        </tr>
-        <tr>
-            <td><a href="https://svmon.eudat.eu" target="_blank">SVMON</a></td>
-            <td><p>SVMON is a service that collects information on software version, stores and displays collections in a compact view. SVMON also uniquely provides information of service attributes.</p></td>
-            <td>EUDAT ltd &amp; KIT</td>
-            <td><p><a href="https://svmon.eudat.eu/data-privacy-statement.html" target="_blank">Data Privacy Statement</a></p></td>
-        </tr>
-        <tr>
-            <td><a href="https://watts.data.kit.edu" target="_blank">WaTTS</a></td>
-            <td><p>The service WaTTS is a Token Translation Service (TTS) that provides a layer where identities, enrollment, group membership and other attributes and authorization policies on distributed resources can be managed in an homogeneous way.</p></td>
-            <td>KIT</td>
-            <td><p><a href="https://watts.data.kit.edu/privacystatement.html" target="_blank">Data Privacy Statement</a></p></td>
-        </tr>
-        <tr>
-            <td><a href="https://watts-dev.data.kit.edu" target="_blank">WaTTS dev</a></td>
-            <td><p>The service WaTTS is a Token Translation Service (TTS) that provides a layer where identities, enrollment, group membership and other attributes and authorization policies on distributed resources can be managed in an homogeneous way.</p></td>
-            <td>KIT</td>
-            <td><p><a href="https://watts-dev.data.kit.edu/privacystatement.html" target="_blank">Data Privacy Statement</a></p></td>
-        </tr>
-        <tr>
-            <th></th>
-            <th>External Services integrated with B2ACCESS</th>
-            <th></th>
-            <th></th>
-        </tr>
-        <tr>
-            <td><a href="" target="_blank">DIRAC 4 EGI</a></td>
-            <td><p></p></td>
-            <td></td>
-            <td><p><!--a href="" target="_blank">Data Privacy Statement</a--></p></td>
-        </tr>
-        <tr>
-            <td><a href="https://aai.egi.eu" target="_blank">EGI Check-in</a></td>
-            <td><p>The EGI Check-in service enables the registration and management of virtual organisations and their members in order to provide users with access to services that are available in the context of the virtual organisation(s) they belong to.</p></td>
-            <td>EGI Foundation &amp; GRNET</td>
-            <td><p><a href="https://aai.egi.eu/privacy.html" target="_blank">Data Privacy Statement</a></p></td>
-        </tr>
-        <tr>
-            <td><a href="https://datahub.egi.eu/" target="_blank">EGI Datahub</a></td>
-            <td><p>DataHub - a production instance of Onedata for the purpose of integrating with services offered by EGI.</p></td>
-            <td>EGI Foundation &amp; Cyfronet</td>
-            <td><p><!--a href="" target="_blank">Data Privacy Statement</a--></p></td>
-        </tr>
-        <tr>
-            <td><a href="https://eosc-portal.eu" target="_blank">EOSC portal</a></td>
-            <td><p>The EOSC portal provides an overview to all services offered within the EOSC.</p></td>
-            <td>Cyfronet</td>
-            <td><p><a href="https://eosc-portal.eu/privacy-policy-summary" target="_blank">Data Privacy Statement</a></p></td>
-        </tr>
-        <tr>
-            <td><a href="https://www.eosc-hub.eu" target="_blank">EOSC Hub portal</a></td>
-            <td><p>EOSC-hub brings together multiple service providers to create the Hub: a single contact point for European researchers and innovators to discover, access, use and reuse a broad spectrum of resources for advanced data-driven research. The project mobilises providers from the EGI Federation, EUDAT CDI, INDIGO-DataCloud and other major European research infrastructures to deliver a common catalogue of research data, services and software for research. </p></td>
-            <td>Trust-IT</td>
-            <td><p><a href="https://www.eosc-hub.eu/content/privacy-policy-summary" target="_blank">Data Privacy Statement</a></p></td>
-        </tr>
-        <tr>
-            <td><a href="https://goc-sdc.argo.grnet.gr" target="_blank">GOCDB SDC</a></td>
-            <td><p>GOCDB is the main topology registry of SeaDataCloud. It is a flexible service registry which can hold information about the services provided by the infrastructure.</p></td>
-            <td>EGI Foundation &amp; STFC</td>
-            <td><p><a href="" target="_blank">Data Privacy Statement</a></p></td>
-        </tr>
-        <tr>
-            <td><a href="https://geofon.gfz-potsdam.de/eas/" target="_blank">GeoFon</a></td>
-            <td><p>The EIDA Authentication Service (EAS) offers EIDA/EPOS-S users a web page to request a digitally signed "token", which they can use at all EIDA services. This token must be used in the case that the user would like to request embargoed data. Its use is optional only when requesting open data, but by using it we can offer them other options which are not available for anonymous users.</p></td>
-            <td>GFZ</td>
-            <td><p><a href="https://geofon.gfz-potsdam.de/eas/privacy.html" target="_blank">Data Privacy Statement</a></p></td>
-        </tr>
-        <tr>
-            <td><a href="https://aiidalab-demo.materialscloud.org" target="_blank">Open AiiDA Lab</a></td>
-            <td><p>The AiiDA lab aims to provide access to key computational materials science capabilities through an intuitive user interface that does not require expertise in the underlying codes or programming languages.</p></td>
-            <td>EPFL</td>
-            <td><p><a href="https://www.materialscloud.org/privacypolicy" target="_blank">Data Privacy Statement</a></p></td>
-        </tr>
-    </table>
-    <p><a href="https://b2access.eudat.eu">Back to service</a></p>
-    <div style="right:0;bottom:0;left:0;padding:1em;text-align:center;">
-        <a href="/../unitygw/VAADIN/files/data-privacy-statement.html" target="_blank">Data Privacy Statement</a>&nbsp;
-        <a href="/../unitygw/VAADIN/files/services.html" target="_blank">Services</a>&nbsp;
-        <a href="/../unitygw/VAADIN/files/terms-of-use.html" target="_blank">Terms of Use</a>
-    </div>
-</body>
-</html>
 
+<body id="page">
+    <noscript>
+        <div id="nojavascript">
+            <div>This application requires JavaScript for correct operation. Please <a
+                    href="http://enable-javascript.com/" target="_blank">enable JavaScript</a> and reload the page.
+            </div>
+        </div>
+    </noscript>
+    <div w3-include-html="components/header.html"></div>
+
+    <div class="container">
+        <h1>Services connected with EUDAT B2ACCESS</h1>
+        <table>
+            <tr>
+                <th>CDI Service</th>
+                <th>CDI Service Description</th>
+                <th>General Provider</th>
+                <th>Privacy Statement</th>
+            </tr>
+            <tr>
+                <td><a href="https://b2drop.eudat.eu">B2DROP</a></td>
+                <td>
+                    <p>B2DROP is a secure and trusted data exchange service for researchers and scientists to keep their
+                        research data synchronized and up-to-date and to exchange with other researchers.</p>
+                </td>
+                <td>EUDAT ltd &amp; JUELICH</td>
+                <td>
+                    <p><a href="https://b2drop.eudat.eu/themes/b2drop/data-privacy-statement.html" target="_blank">Data
+                            Privacy Statement</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="" target="_blank">B2DROP fi</a></td>
+                <td>
+                    <p>Community instance of B2DROP offered by CSC to members of finish universities.</p>
+                </td>
+                <td>CSC</td>
+                <td>
+                    <p><a href="https://confluence.csc.fi/display/EUDATCSCServices/EUDAT+Privacy+policy"
+                            target="_blank">Data Privacy Statement</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://b2gether.eudat.eu/" target="_blank">B2GETHER</a></td>
+                <td>
+                    <p>EUDAT Collaborative Working Area</p>
+                </td>
+                <td>Trust-IT</td>
+                <td>
+                    <p><!--a href="" target="_blank">Data Privacy Statement</a--></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://hdf-cloud.fz-juelich.de" target="_blank">B2HOST JSC</a></td>
+                <td>
+                    <p>B2HOST resources provided by Jülich Supercomputing Centre.</p>
+                </td>
+                <td>JUELICH</td>
+                <td>
+                    <p><a href="https://hdf-cloud.fz-juelich.de/static/dashboard/privacy-statement.html"
+                            target="_blank">Data Privacy Statement</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://b2note.eudat.eu/" target="_blank">B2NOTE</a></td>
+                <td>
+                    <p></p>
+                </td>
+                <td>EUDAT ltd &amp; BSC</td>
+                <td>
+                    <p><!--a href="" target="_blank">Data Privacy Statement</a--></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://b2share.eudat.eu/" target="_blank">B2SHARE</a></td>
+                <td>
+                    <p>B2SHARE is the EUDAT user-friendly, reliable and trustworthy service for researchers, scientific
+                        communities and citizen scientists to store and publish finalized static research data from
+                        diverse
+                        contexts.<br />B2SHARE maintains small and medium sized research objects by itself, but it can
+                        also
+                        be used to register and publish information about larger data objects locating in other storage
+                        services.</p>
+                </td>
+                <td>EUDAT ltd &amp; CSC</td>
+                <td>
+                    <p><a href="https://confluence.csc.fi/display/EUDATCSCServices/EUDAT+Privacy+policy"
+                            target="_blank">Data Privacy Statement</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://b2share.fz-juelich.de/" target="_blank">B2SHARE JSC</a></td>
+                <td>
+                    <p>Community instance of B2SHARE offered by Jülich Supercomputing Centre to Forschungszentrum Jülich
+                        and
+                        related communities.</p>
+                </td>
+                <td>JUELICH</td>
+                <td>
+                    <p><a href="https://b2share.fz-juelich.de/data-privacy-statement.html" target="_blank">Data Privacy
+                            Statement</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://b2share-testing.fz-juelich.de" target="_blank">B2SHARE JSC test</a></td>
+                <td>
+                    <p>Testing community instance of B2SHARE offered by Jülich Supercomputing Centre to
+                        Forschungszentrum
+                        Jülich and related communities. This instance is only for testing purpose. It does not provide
+                        PIDs
+                        and long term preservation.</p>
+                </td>
+                <td>JUELICH</td>
+                <td>
+                    <p><a href="https://b2share-testing.fz-juelich.de/data-privacy-statement.html" target="_blank">Data
+                            Privacy Statement</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="" target="_blank">B2SHARE stress test</a></td>
+                <td>
+                    <p>Non public instance of B2SHARE used for stress testing.</p>
+                </td>
+                <td>CSC</td>
+                <td>
+                    <p><a href="https://confluence.csc.fi/display/EUDATCSCServices/EUDAT+Privacy+policy"
+                            target="_blank">Data Privacy Statement</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="" target="_blank">B2SHARE test</a></td>
+                <td>
+                    <p>Non public instance of B2SHARE used for tests of new features and versions.</p>
+                </td>
+                <td>CSC</td>
+                <td>
+                    <p><a href="https://confluence.csc.fi/display/EUDATCSCServices/EUDAT+Privacy+policy"
+                            target="_blank">Data Privacy Statement</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="" target="_blank">B2SHARE training</a></td>
+                <td>
+                    <p>Training instance of EUDAT B2SHARE B2SHARE is the EUDAT user-friendly, reliable and trustworthy
+                        service for researchers, scientific communities and citizen scientists to store and publish
+                        finalized static research data from diverse contexts. B2SHARE maintain small and medium sized
+                        research objects by itself, but it can also be used to register and publish information about
+                        larger
+                        data objects locating in other storage services.</p>
+                </td>
+                <td>EUDAT ltd &amp; CSC</td>
+                <td>
+                    <p><a href="https://confluence.csc.fi/display/EUDATCSCServices/EUDAT+Privacy+policy"
+                            target="_blank">Data Privacy Statement</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://dpmgr.eudat.eu/" target="_blank">DPM</a></td>
+                <td>
+                    <p>DPM is a tool that provides data policy management functionality. It can be used by data managers
+                        to
+                        define data policies, store them and share them with the data service providers, who will
+                        enforce
+                        them; service integrators to integrate a third-party service with the DPM relying on the XML DB
+                        API;
+                        B2SAFE service administrators to have a view on the policies defined by a community data manager
+                        -They can download and enforce them and provide feedback to the data managers.</p>
+                </td>
+                <td>EUDAT ltd &amp; SIGMA2</td>
+                <td>
+                    <p><a href="https://dpmgr.eudat.eu/data-privacy-statement.html" target="_blank">Data Privacy
+                            Statement</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://dp.eudat.eu" target="_blank">DPMT</a></td>
+                <td>
+                    <p>The DPMT is <a href="https://www.eudat.eu/cdi" target="_blank">EUDAT CDIs</a> e-Infrastructure
+                        registry for managing and distributing information about service providers, the providers'
+                        service
+                        and resource offers, the actually provided service instances (RegisteredServices) and the
+                        related
+                        service components (RegisteredServiceComponents). It obtains information about products offered
+                        by
+                        EUDAT from the EUDAT Service Catalog that is managed via the EUDAT Service Portfolio Management
+                        Tool
+                        (SPMT).<br /> The DPMT compise a customer management data base in that the CDI customers
+                        (organisations and representing persons) and their business cases (data projects) are
+                        registered.
+                        The accounted usage of storage and compute resources are mapped to the data projects.</p>
+                </td>
+                <td>EUDAT ltd &amp; MPCDF</td>
+                <td>
+                    <p><a href="https://dp.eudat.eu/help/privacy-statement" target="_blank">Data Privacy Statement</a>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://easydmp.eudat.eu/" target="_blank">EasyDMP</a></td>
+                <td>
+                    <p>EASYDMP is a service that simplifies the task of creating data management plans.</p>
+                </td>
+                <td>SIGMA2</td>
+                <td>
+                    <p><a href="https://easydmp.eudat.eu/privacy/" target="_blank">Data Privacy Statement</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a>EDUUNI</a></td>
+                <td>
+                    <p>Eduuni is a collaboration service environment for flexible and secure collaboration across
+                        organisation and ecosystem boundaries. It is hosting the CDI confluence wiki and the CDI Jira
+                        ticketing system.</p>
+                </td>
+                <td>EDUUNI via CSC</td>
+                <td>
+                    <p><a href="https://wiki.eduuni.fi/display/info/Eduuni+Privacy+Policy" target="_blank">Data Privacy
+                            Statement</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://gitlab.eudat.eu" target="_blank">GitLab</a></td>
+                <td>
+                    <p>GitLab is the first single application for the entire DevOps lifecycle.</p>
+                </td>
+                <td>EUDAT ltd &amp; KIT</td>
+                <td>
+                    <p><a href="https://gitlab.eudat.eu/data-privacy-statement" target="_blank">Data Privacy
+                            Statement</a>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://helpdesk.eudat.eu/index.html" target="_blank">Helpdesk</a></td>
+                <td>
+                    <p>helpdesk.eudat.eu, service providing the helpdesk to all EUDAT services</p>
+                </td>
+                <td>EUDAT ltd &amp; BSC</td>
+                <td>
+                    <p><!--a href="" target="_blank">Data Privacy Statement</a--></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a>HTTP API BSC</a></td>
+                <td>
+                    <p></p>
+                </td>
+                <td>BSC</td>
+                <td>
+                    <p><!--a href="" target="_blank">Data Privacy Statement</a--></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a>HTTP API CINECA</a></td>
+                <td>
+                    <p>The B2STAGE service allows data staging, i.e. data transfer into and out of EUDAT data nodes.
+                        Data
+                        staged into EUDAT are assigned a unique Persistent Identified (PID). The HTTP APIs allow for
+                        access
+                        to both data and metadata stored into B2SAFE.</p>
+                </td>
+                <td>CINECA</td>
+                <td>
+                    <p><a href="https://www.cineca.it/en/content/policy" target="_blank">Data Privacy Statement</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://poem-eudat.argo.grnet.gr" target="_blank">Poem</a></td>
+                <td>
+                    <p>This service is used in order to define checks (probes) and associate them to service types. Each
+                        grouping of checks and service types forms a POEM profile.</p>
+                </td>
+                <td>EUDAT ltd &amp; GRNET</td>
+                <td>
+                    <p><!--a href="" target="_blank">Data Privacy Statement</a--></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://poem-sdc.argo.grnet.gr" target="_blank">Poem SDC</a></td>
+                <td>
+                    <p>This service is used in order to define checks (probes) and associate them to service types. Each
+                        grouping of checks and service types forms a POEM profile.</p>
+                </td>
+                <td>EUDAT ltd &amp; GRNET</td>
+                <td>
+                    <p><!--a href="" target="_blank">Data Privacy Statement</a--></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="" target="_blank">SDC Demo</a></td>
+                <td>
+                    <p></p>
+                </td>
+                <td></td>
+                <td>
+                    <p><!--a href="" target="_blank">Data Privacy Statement</a--></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://sp.eudat.eu" target="_blank">SPMT</a></td>
+                <td>
+                    <p>The Service Portfolio/Catalogue Management Tool (SPMT) manages definitions of the different
+                        classes
+                        of services and service components and is designed following the FitSM service portfolio
+                        management
+                        process.</p>
+                </td>
+                <td>EUDAT ltd &amp; GRNET</td>
+                <td>
+                    <p><a href="https://sp.eudat.eu/privacy" target="_blank">Data Privacy Statement</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://svmon.eudat.eu" target="_blank">SVMON</a></td>
+                <td>
+                    <p>SVMON is a service that collects information on software version, stores and displays collections
+                        in
+                        a compact view. SVMON also uniquely provides information of service attributes.</p>
+                </td>
+                <td>EUDAT ltd &amp; KIT</td>
+                <td>
+                    <p><a href="https://svmon.eudat.eu/data-privacy-statement.html" target="_blank">Data Privacy
+                            Statement</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://watts.data.kit.edu" target="_blank">WaTTS</a></td>
+                <td>
+                    <p>The service WaTTS is a Token Translation Service (TTS) that provides a layer where identities,
+                        enrollment, group membership and other attributes and authorization policies on distributed
+                        resources can be managed in an homogeneous way.</p>
+                </td>
+                <td>KIT</td>
+                <td>
+                    <p><a href="https://watts.data.kit.edu/privacystatement.html" target="_blank">Data Privacy
+                            Statement</a>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://watts-dev.data.kit.edu" target="_blank">WaTTS dev</a></td>
+                <td>
+                    <p>The service WaTTS is a Token Translation Service (TTS) that provides a layer where identities,
+                        enrollment, group membership and other attributes and authorization policies on distributed
+                        resources can be managed in an homogeneous way.</p>
+                </td>
+                <td>KIT</td>
+                <td>
+                    <p><a href="https://watts-dev.data.kit.edu/privacystatement.html" target="_blank">Data Privacy
+                            Statement</a></p>
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <th>External Services integrated with B2ACCESS</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td><a href="" target="_blank">DIRAC 4 EGI</a></td>
+                <td>
+                    <p></p>
+                </td>
+                <td></td>
+                <td>
+                    <p><!--a href="" target="_blank">Data Privacy Statement</a--></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://aai.egi.eu" target="_blank">EGI Check-in</a></td>
+                <td>
+                    <p>The EGI Check-in service enables the registration and management of virtual organisations and
+                        their
+                        members in order to provide users with access to services that are available in the context of
+                        the
+                        virtual organisation(s) they belong to.</p>
+                </td>
+                <td>EGI Foundation &amp; GRNET</td>
+                <td>
+                    <p><a href="https://aai.egi.eu/privacy.html" target="_blank">Data Privacy Statement</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://datahub.egi.eu/" target="_blank">EGI Datahub</a></td>
+                <td>
+                    <p>DataHub - a production instance of Onedata for the purpose of integrating with services offered
+                        by
+                        EGI.</p>
+                </td>
+                <td>EGI Foundation &amp; Cyfronet</td>
+                <td>
+                    <p><!--a href="" target="_blank">Data Privacy Statement</a--></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://eosc-portal.eu" target="_blank">EOSC portal</a></td>
+                <td>
+                    <p>The EOSC portal provides an overview to all services offered within the EOSC.</p>
+                </td>
+                <td>Cyfronet</td>
+                <td>
+                    <p><a href="https://eosc-portal.eu/privacy-policy-summary" target="_blank">Data Privacy
+                            Statement</a>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://www.eosc-hub.eu" target="_blank">EOSC Hub portal</a></td>
+                <td>
+                    <p>EOSC-hub brings together multiple service providers to create the Hub: a single contact point for
+                        European researchers and innovators to discover, access, use and reuse a broad spectrum of
+                        resources
+                        for advanced data-driven research. The project mobilises providers from the EGI Federation,
+                        EUDAT
+                        CDI, INDIGO-DataCloud and other major European research infrastructures to deliver a common
+                        catalogue of research data, services and software for research. </p>
+                </td>
+                <td>Trust-IT</td>
+                <td>
+                    <p><a href="https://www.eosc-hub.eu/content/privacy-policy-summary" target="_blank">Data Privacy
+                            Statement</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://goc-sdc.argo.grnet.gr" target="_blank">GOCDB SDC</a></td>
+                <td>
+                    <p>GOCDB is the main topology registry of SeaDataCloud. It is a flexible service registry which can
+                        hold
+                        information about the services provided by the infrastructure.</p>
+                </td>
+                <td>EGI Foundation &amp; STFC</td>
+                <td>
+                    <p><a href="" target="_blank">Data Privacy Statement</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://geofon.gfz-potsdam.de/eas/" target="_blank">GeoFon</a></td>
+                <td>
+                    <p>The EIDA Authentication Service (EAS) offers EIDA/EPOS-S users a web page to request a digitally
+                        signed "token", which they can use at all EIDA services. This token must be used in the case
+                        that
+                        the user would like to request embargoed data. Its use is optional only when requesting open
+                        data,
+                        but by using it we can offer them other options which are not available for anonymous users.</p>
+                </td>
+                <td>GFZ</td>
+                <td>
+                    <p><a href="https://geofon.gfz-potsdam.de/eas/privacy.html" target="_blank">Data Privacy
+                            Statement</a>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://aiidalab-demo.materialscloud.org" target="_blank">Open AiiDA Lab</a></td>
+                <td>
+                    <p>The AiiDA lab aims to provide access to key computational materials science capabilities through
+                        an
+                        intuitive user interface that does not require expertise in the underlying codes or programming
+                        languages.</p>
+                </td>
+                <td>EPFL</td>
+                <td>
+                    <p><a href="https://www.materialscloud.org/privacypolicy" target="_blank">Data Privacy Statement</a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <p><a href="https://b2access.eudat.eu">Back to service</a></p>
+    </div>
+    <div w3-include-html="components/footer.html"></div>
+</body>
+<script>includeHTML()</script>
+
+</html>
