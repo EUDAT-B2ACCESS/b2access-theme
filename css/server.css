@@ -157,6 +157,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
+    z-index: 6;
 }
 
 .page-wrap .footer .logo p {
