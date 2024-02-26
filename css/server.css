@@ -281,6 +281,7 @@ body {
     margin: 0;
 }
 
+#main-element,
 #page {
     /*min-height: max(calc(100% - 200px), 400px);*/
     padding-bottom: 200px; /*same as combined footer height*/
@@ -353,6 +354,7 @@ body {
     margin-left: 20px;
 }
 
+#main-element>.container,
 #page>.container {
     min-height: 100%;
     /*padding-bottom: 200px; Handled by #page*/
@@ -442,6 +444,7 @@ table {
         justify-content: flex-start;
     }
 
+    #main-element,
     #page {
         padding-bottom: 280px; /*Footer + secondary footer height*/
     }
@@ -455,6 +458,8 @@ table {
         line-height: 20px;
     }
 
+    #main-element .login-box,
+    #main-element .login-option,
     #page .login-box,
     #page .login-option {
         max-width: 95%;
