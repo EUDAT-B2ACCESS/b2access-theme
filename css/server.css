@@ -275,6 +275,7 @@ a:hover {
 .ng-csp,
 #body-login {
     background-color: #FAFAFA !important;
+    height: 100vh;
 }
 
 #body-login {
