@@ -76,6 +76,8 @@ body {
 .page-wrap .primary-header {
     background: #264899;
     padding: 0 8.3333vw;
+    font-size: 1.6em;
+    height: 1.6em;
 }
 
 .page-wrap .primary-header .section-link a {
@@ -104,6 +106,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    width: 100%;
 }
 
 .page-wrap .header #menu {
