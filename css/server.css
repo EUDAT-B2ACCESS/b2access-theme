@@ -106,7 +106,6 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    width: 100%;
 }
 
 .page-wrap .header #menu {
@@ -293,6 +292,7 @@ body {
     background-position: 0% 30%;
     background-color: #FAFAFA;
     min-height: 500px;
+    height: auto;
 }
 
 #b2access-login {
