@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="ng-csp ie ie6 lte9 lte8 lte7" data-placeholder-focus="false"><![endif]-->
+<!--[if IE 7]>
+<html class="ng-csp ie ie7 lte9 lte8 lte7" data-placeholder-focus="false"><![endif]-->
+<!--[if IE 8]>
+<html class="ng-csp ie ie8 lte9 lte8" data-placeholder-focus="false"><![endif]-->
+<!--[if IE 9]>
+<html class="ng-csp ie ie9 lte9" data-placeholder-focus="false"><![endif]-->
+<!--[if gt IE 9]>
+<html class="ng-csp ie" data-placeholder-focus="false"><![endif]-->
+<!--[if !IE]><!-->
+<html class="ng-csp" data-placeholder-focus="false"><!--<![endif]-->
+
+<head>
+    <title>B2ACCESS - FAQ</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon16_16.png" />
+    <link rel="stylesheet" href="../css/server.css" type="text/css" media="screen" />
+    <script src="../js/b2drop-include.js"></script>
+</head>
+
+<body id="page">
+    <noscript>
+        <div id="nojavascript">
+            <div>This application requires JavaScript for correct operation. Please <a
+                    href="http://enable-javascript.com/" target="_blank">enable JavaScript</a> and reload the page.
+            </div>
+        </div>
+    </noscript>
+
+    <div w3-include-html="components/header.html"></div>
+
+    <div class="container" align="justify">
+        <h2>What is B2ACCESS?</h2>
+        <p>B2ACCESS is the EUDAT Authentication, Authorization and Identity service. When B2ACCESS is integrated with a
+            given service, you can sign into the service by using EUDAT identity or another identity you have gotten
+            from en external identity providers - universities, social media.</p>
+        <h2>Can I trust it?</h2>
+        <p>B2ACCESS uses secure communications (like you would see in e-commerce except it is not rated to handle
+            financial data). B2ACCESS has also gone through a security assessment. And don't forget that B2ACCESS - with
+            the exception of identities managed by B2ACCESS itself - never sees your password!</p>
+        <h2>I forgot my password</h2>
+        <p>If B2ACCESS is your primary identity provider then press &quot;Forgotten Password?&quot; link between
+            password field and authenticate button. You have to enter your username. Thereafter a reset code will be
+            sent to your registered e-mail address. If you enter the reset code you are able to set a new password.</p>
+        <p>If you are using an external identity provider, B2ACCESS cannot help you with a forgotten password: you will
+            need to use the helpdesk of your identity provider or password reset mechanism.</p>
+        <h2>I forgot my username</h2>
+        <p>If B2ACCESS is your identity provider, then your username is the name you typed into the registration form.
+            Names can have spaces in them, for example "Joe Bloggs".</p>
+        <p>If your are using an identity from an external identity provider, then please contact their helpdesk.</p>
+        <h2>I can not log in with my external identity provider</h2>
+        <h3>I got an error page, not the B2ACCESS page itself, before I was able to enter my credentials</h3>
+        <p>In this case your identity provider doesn't support identity exchange with B2ACCESS. Please contact their
+            helpdesk and ask for enabling B2ACCESS as service provider. B2ACCESS needs mail and EPPN attributes from
+            your identity provider.</p>
+        <h3>I got a red error box with &quot;Authentication failed! Invalid user name, credential or external
+            authentication failed.&quot;</h3>
+        <p>This message is a general error message. A more detailed message is printed on screen behind this error
+            message. Please close it and have a look on details.</p>
+        <h3>My identity provider is not trusted/does not sign the document</h3>
+        <p>This error occurs if something in the response is not signed. In most cases assertion elements within
+            response messages are not signed. The assertion elements must be signed in <a target="_blank"
+                href="http://saml2int.org/profile/current/#section91">SAML2int profile</a>. This profile is the only
+            allowed profile within <a target="_blank"
+                href="https://technical.edugain.org/doc/eduGAIN%20SAML%202.0%20WebSSO%20Profile.pdf">eduGain</a> SSO.
+            B2ACCESS follows these requirements and only accepts responses from identity providers with signed assertion
+            elements. Please contact your identity provider's helpdesk and ask for singing the assertion elements in
+            SAML response.<br />Additional information for IT-staff:<br />This error occurs often after Shibboleth
+            update. A working configuration is:
+        <pre><code>
+&lt;bean parent="RelyingPartyByName" c:relyingPartyIds="https://b2access.eudat.eu:8443/unitygw/saml-sp-metadata"&gt;
+    &lt;property name="profileConfigurations"&gt;
+        &lt;list&gt;
+            &lt;bean parent="SAML2.SSO" p:encryptAssertions="true" p:signResponses="true" p:signAssertions="true" p:encryptionOptional="false" p:nameIDFormatPrecedence="#{{'urn:oasis:names:tc:SAML:2.0:nameid-format:persistent'}}"/&gt;
+        &lt;/list&gt;
+    &lt;/property&gt;
+&lt;/bean&gt;
+</code></pre>
+        If this error still occurs although the signatures are fine, please <a target="_blank"
+            href="https://eudat.eu/support-request?service=B2ACCESS">contact us</a>. We will try to find a solution for
+        your problem.</p>
+        <h3>The mapping of my remote identity/authentication principal failed</h3>
+        <p>In most cases the external identity provider doesn't release all attributes needed by B2ACCESS. B2ACCESS
+            consumes mail and EPPN attributes. Please contact your identity providers helpdesk and ask for releasing
+            this attributes to B2ACCESS. If this error still occurs although these attributes are release, please <a
+                target="_blank" href="https://eudat.eu/support-request?service=B2ACCESS">contact us</a>. We will try to
+            find a solution for your problem.</p>
+        <h2>I logged in with my external identity provider and want to associate it with an existing account.</h2>
+        <p>Account association is not supported. Your different accounts may have different attribute values which will
+            clash. To avoid problems using the EUDAT services, we decided not to support the account association.</p>
+        <h2>I use a Mac and Safari. After granting access to my keychain, I got a &quot;page could not be loaded&quot;
+            error</h2>
+        <p>Please use a valid certificate instead of your Apple ID. If you don't have a valid certificate, press
+            &quot;Deny&quot; if you get asked about access to your Apple ID in keychain. B2ACCESS will be loaded after
+            it.</p>
+        <h2>Whom should I contact if I have problems/questions/suggestions?</h2>
+        <p>Please contact our <a target="_blank" href="https://eudat.eu/support-request?service=B2ACCESS">helpdesk</a>:
+            you will get an answer very soon!</p>
+        <h2>I want to use B2ACCESS as AAI for my new software: what shall I do?</h2>
+        <p>Get in <a target="_blank" href="https://eudat.eu/support-request?service=B2ACCESS">contact with us</a>: we
+            will provide a great support!</p>
+        Version 1.6</br>
+        2020-04-02
+
+    </div>
+
+    <div w3-include-html="components/footer.html"></div>
+</body>
+<script>includeHTML()</script>
+
+</html>
