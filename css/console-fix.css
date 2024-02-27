@@ -6,6 +6,7 @@ body>#main-element {
     min-width: 100%;
     min-height: 100%;
     margin: 0;
+    padding-bottom: 0;
 }
 
 /* Hide footer */
