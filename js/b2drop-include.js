@@ -1,4 +1,7 @@
 function includeHTML() {
+    if (window.location.href.endsWith('/console/')) {
+        return;
+    }
     var z, i, elmnt, file, xhttp;
     /* Loop through a collection of all HTML elements: */
     z = document.getElementsByTagName("*");
