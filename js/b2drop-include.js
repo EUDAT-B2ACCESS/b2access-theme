@@ -25,3 +25,15 @@ function includeHTML() {
         }
     }
 }
+
+window.onload = function () {
+    if (window.location.href.endsWith('/console/')) {
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '/unitygw/VAADIN/themes/html/css/console-fix.css';
+
+        // Append the link element to the head section of the document
+        document.head.appendChild(link);
+    }
+};
