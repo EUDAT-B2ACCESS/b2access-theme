@@ -294,7 +294,7 @@ body {
 #main-element,
 #page {
     min-height: calc(100% - 200px - 45px - 140px);
-    height: calc(100% - 200px - 45px - 140px);
+    /*height: calc(100% - 200px - 45px - 140px);*/
     /* page size - footer - primary-header - header*/
     padding-bottom: 200px;
     /*same as combined footer height*/
@@ -445,7 +445,6 @@ table {
     #page {
         /* page size - footer - primary-header - header*/
         min-height: calc(100% - 200px - 45px - 240px);
-        height: calc(100% - 200px - 45px - 240px);
     }
 }
 
@@ -473,7 +472,7 @@ table {
         /*Footer + secondary footer height*/
         /* page size - footer - primary-header - header*/
         min-height: calc(100% - 280px - 45px - 240px);
-        height: calc(100% - 280px - 45px - 240px);
+        /*height: calc(100% - 280px - 45px - 240px);*/
     }
 
     .page-wrap .footer #menu ul {
