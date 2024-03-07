@@ -21,3 +21,17 @@ body,
 .header-mount {
     display: none;
 }
+
+div.u-leftMenu {
+    border-right: 1px solid #888888;
+    font-size: 1px !important;  /*fix unity bug switching from 250px to 250em*/
+    background-color: #f2f2f2;
+}
+
+div.u-leftMenu .u-left-menu-toggle {
+    font-size: 20px !important; /*fix unity bug switching from 250px to 250em*/
+}
+
+.unityThemeValo .u-sidebar .u-rootContent > .v-expand .v-slot-u-leftMenu .u-leftMenu {
+    width: unset !important; /*fix unity bug switching from 250px to 250em*/
+}
