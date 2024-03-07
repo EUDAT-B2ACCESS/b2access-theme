@@ -2,11 +2,14 @@ body .unity-wrapper {
     height: 100%;
 }
 
-body>#main-element {
-    min-width: 100%;
-    min-height: 100%;
+html,
+body,
+#main-element {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding-bottom: 0;
+
 }
 
 /* Hide footer */

@@ -1,5 +1,10 @@
+function isConsoleEndpoint() {
+    var pathSegments = window.location.pathname.split('/');
+    return pathSegments.length > 1 && pathSegments[1] === "console";
+}
+
 function includeHTML() {
-    if (window.location.href.endsWith('/console/')) {
+    if (isConsoleEndpoint()) {
         return;
     }
     var z, i, elmnt, file, xhttp;
@@ -9,6 +14,7 @@ function includeHTML() {
         elmnt = z[i];
         /*search for elements with a certain atrribute:*/
         file = elmnt.getAttribute("w3-include-html");
+
         if (file) {
             /* Make an HTTP request using the attribute value as the file name: */
             xhttp = new XMLHttpRequest();
@@ -28,15 +34,3 @@ function includeHTML() {
         }
     }
 }
-
-window.onload = function () {
-    if (window.location.href.endsWith('/console/')) {
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = '/unitygw/VAADIN/themes/html/css/console-fix.css';
-
-        // Append the link element to the head section of the document
-        document.head.appendChild(link);
-    }
-};

@@ -283,14 +283,14 @@ a:hover {
 }
 
 html {
-    padding-bottom: 200px;
-    height: calc(100% - 200px);
+    height: auto;
     background-image: url("../img/bg_page.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 50% auto;
     background-position: 50% 50%;
     background-color: #FAFAFA;
+    min-height: 100%;
 }
 
 body {
@@ -369,7 +369,9 @@ body {
     color: unset;
     background-color: unset !important;
     background: none;
-    height: auto;
+    height: 100%;
+    /*XXX Unity sign in page fix*/
+    min-height: 564px;
 }
 
 #main-element>.container,
@@ -424,6 +426,33 @@ table {
 
 #page .failserver .extra-space-top {
     margin-top: 20px;
+}
+
+/*unity fixes*/
+.unityThemeValo .v-button-caption {
+    max-width: 100%;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.unityThemeValo .v-scrollable {
+    /*XXX Unity sign in page fix*/
+    min-height: 564px;
+}
+
+.unityThemeValo .v-slot > .v-csslayout.v-layout.v-widget {
+    display: flex;
+    flex-direction: row;
+}
+
+.unityThemeValo .v-slot-u-authn-logo img{	
+	display: none;	
+}	
+	
+.unityThemeValo .u-authn-title{	
+	display: none;
 }
 
 @media only screen and (max-width: 950px) {
@@ -487,5 +516,11 @@ table {
     #main-element,
     html {
         padding-bottom: 280px;
+    }
+
+    /*revert unity fix*/
+    .unityThemeValo .v-slot > .v-csslayout.v-layout.v-widget {
+        display: flex;
+        flex-direction: column;
     }
 }
