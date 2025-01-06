@@ -1,7 +1,10 @@
+function getCurrentTime() {
+    const d = new Date();
+    let time = d.getTime();
+    return time
+}
+
 function includeHTML() {
-    if (window.location.href.endsWith('/console/')) {
-        return;
-    }
     var z, i, elmnt, file, xhttp;
     /* Loop through a collection of all HTML elements: */
     z = document.getElementsByTagName("*");
@@ -9,7 +12,25 @@ function includeHTML() {
         elmnt = z[i];
         /*search for elements with a certain atrribute:*/
         file = elmnt.getAttribute("w3-include-html");
+
         if (file) {
+            /* only show title on login site */
+            if (file.endsWith(file)) {
+                const lastVisited = localStorage.getItem('visited');
+                const currentTime = getCurrentTime();
+            
+                if (!lastVisited || (currentTime - lastVisited >= 1000 * 60 * 30)) {
+                    var link = document.createElement('link');
+                    link.rel = 'stylesheet';
+                    link.type = 'text/css';
+                    link.href = '/unitygw/VAADIN/themes/customTheme/css/show-title.css';
+            
+                    // Append the link element to the head section of the document
+                    document.head.appendChild(link);
+                    localStorage.setItem('visited', getCurrentTime());
+                }
+            }
+
             /* Make an HTTP request using the attribute value as the file name: */
             xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function () {
@@ -28,15 +49,3 @@ function includeHTML() {
         }
     }
 }
-
-window.onload = function () {
-    if (window.location.href.endsWith('/console/')) {
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = '/unitygw/VAADIN/themes/html/css/console-fix.css';
-
-        // Append the link element to the head section of the document
-        document.head.appendChild(link);
-    }
-};
