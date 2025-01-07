@@ -104,6 +104,13 @@ html {
     box-shadow: 0 10px 10px #eeeeee;
 }
 
+#header-content-container {
+    background-image: url("/unitygw/b2access/common/img/pattern.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 0 50px;
+}
+
 #header-content-container .logo-link:hover {
     opacity: 0.8;
     /* Reduce opacity on hover */
@@ -125,7 +132,6 @@ html {
     position: absolute;
     height: 88px;
     /*width: 200px; this looks a bit scuffed, just set height*/
-    padding: 0 10px;
 }
 
 #header-content-container .logo a {
@@ -158,10 +164,12 @@ html {
 
 #header #gotoeudat {
     background-color: #264899;
+    padding: 0 50px;
 }
 #header #gotoeudat span {
     color: #fff;
-    margin-left: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
 }
 
 /*.unity-layout-top {
