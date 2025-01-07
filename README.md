@@ -14,7 +14,7 @@ Subset of configurations and customizations on Unity IdM installation for b2acce
 
 ## Installation
 
-1. Clone this repository into `unity-x.x.x./webContents` with `TODO GIT b2access` 
+1. Clone this repository into `unity-4.x.x./webContents` with `git clone https://github.com/EUDAT-B2ACCESS/b2access-theme.git b2access` 
 so your directory structure looks like this:
 ```
 webContents/
@@ -42,7 +42,7 @@ unity.endpoint.web.extraBottomPanel=b2access/b2access-bottombar.html
 6. `conf/modules/core/upman.properties` for the upman-endpoint:
 ```
 unity.endpoint.web.customCssFileName=b2access/b2access-home.css
-unity.endpoint.web.extraTopPanel=b2access/b2access-upman-topbar.html  # different
+unity.endpoint.web.extraTopPanel=b2access/b2access-topbar.html
 unity.endpoint.web.extraBottomPanel=b2access/b2access-bottombar.html
 ```
 
