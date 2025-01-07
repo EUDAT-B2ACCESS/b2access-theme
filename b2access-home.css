@@ -43,21 +43,22 @@ html {
 }
 
 #unity-layout-top {
-    height: var(--header-height) !important;
+    min-height: var(--header-height) !important;
 }
 
 .u-main-layout-container > div:nth-child(2),
-.u-main-layout-container {
-    height: calc(100vh - var(--header-height) - var(--footer-height)) !important;
-    min-height: unset;
+.u-main-layout-container,
+.main-subsite .container {
+    min-height: calc(100vh - var(--header-height) - var(--footer-height)) !important;
 }
 
 #unity-layout-bottom {
-    height: var(--footer-height) !important;
+    min-height: var(--footer-height) !important;
 }
 
 /* background logo*/
-.u-main-layout-container {
+.u-main-layout-container,
+.main-subsite {
     background-image: url("/unitygw/b2access/common/img/bg_page.png");
     background-position-y: center;
     background-position-x: center;
@@ -244,11 +245,15 @@ html {
 }
 
 .main-subsite .container {
-    margin: 1% 15% 1% 15%;
-    padding: 1rem;
-    background-color: #FAFAFA;
+    margin: 0 15% 0 15%;
+    padding: 0 1rem 0 1rem;
     border-radius: 4px;
-    height: 98%;
+}
+
+/* fix h1 being stupid*/
+.main-subsite .container h1 {
+    margin-top: 0;
+    padding-top: 10px;
 }
 
 /* Fix clipping and use elipsies */
