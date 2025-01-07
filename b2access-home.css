@@ -450,6 +450,11 @@ html {
         height: 130px;
     }*/
 
+    #header #gotoeudat,
+    #header-content-container {
+        padding: 0;
+    }
+
     #header-menu {
         margin-top: 70px;
         justify-content: center;
