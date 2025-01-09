@@ -14,7 +14,7 @@ html {
     --lumo-primary-text-color: #3F3F3E;
     --lumo-primary-color-50pct: #fff;
     --lumo-primary-color-10pct: #fff;
-    --lumo-primary-color: #00ff00;
+    --lumo-primary-color: #FF4637;
     --lumo-shade-90pct: hsla(214, 40%, 16%, 0.94);
     --lumo-header-text-color: #264899;
     --lumo-error-color: #FF4637;
@@ -32,6 +32,7 @@ html {
     --lumo-clickable-cursor: pointer;
     /*This one works on u-authn-screen*/
     background-color: #fafafa;
+    --unity-text-field-medium: 100%;
 }
 
 
@@ -39,7 +40,7 @@ html {
 /*Fix annoying scrollbar*/
 :root {
     --header-height: 120px;
-    --footer-height: 125px;
+    --footer-height: 165px;
 }
 
 #unity-layout-top {
@@ -228,8 +229,7 @@ html {
 
 /* logged in: navbar, where "Profile" is written*/
 .u-main-layout-navbar {
-    background-color: #e0eaf2;
-    ;
+    background-color: #f0f0f0;
 }
 
 /* hide unitys logo */
@@ -311,7 +311,7 @@ html {
 
 /* FOOTER */
 #footer {
-    padding: 0 50px;
+    padding: 15px 50px;
     font-size: 12px;
     text-align: center;
 }
@@ -359,6 +359,18 @@ html {
 
 #footer .footer-hspacer {
     margin-right: auto;
+}
+
+#footer #copyright-eudat {
+    padding: 2px 0;
+}
+
+#footer #subfooter-menu {
+    padding-top: 6px;
+}
+
+#footer .flag-eu {
+    padding-right: 6px;
 }
 
 /* PHONE */
