@@ -49,3 +49,7 @@ unity.endpoint.web.extraBottomPanel=b2access/b2access-bottombar.html
 Note: You can put off the extra panels prevents header and footer to show AFTER login
 with `unity.endpoint.web.addExtraPanelsAfterAuthentication=false`
 
+7. `conf/unityServer.conf` for general endpoints:
+```
+unityServer.core.customCssFileName=b2access/b2access-core.css
+```
