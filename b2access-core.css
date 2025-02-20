@@ -1,0 +1,29 @@
+html {
+    --lumo-font-size-xxxl: 3rem;
+    --lumo-font-family: Verdana, "Verdana Ref", sans-serif;
+    --lumo-size-xl: 5rem;
+    --lumo-primary-text-color: #3F3F3E;
+    --lumo-primary-color-50pct: #fff;
+    --lumo-primary-color-10pct: #fff;
+    --lumo-primary-color: #FF4637;
+    --lumo-shade-90pct: hsla(214, 40%, 16%, 0.94);
+    --lumo-header-text-color: #264899;
+    --lumo-error-color: #FF4637;
+    --lumo-success-color: #00B720;
+    --unity-font-weight: 500;
+    --vaadin-text-field-default-width: 16em;
+    --lumo-button-primary-background: #264899;
+    --vaadin-button-primary-background: #264899;
+    --unity-hover-button-color: #E65217;
+    --unity-selected-tab-color: #677eb7;
+    
+    --unity-tab-hover-color: #E65217;
+    /* This naming schema >.< */
+    --unity-icon-color: #264899;
+    /* Why is the default so stupid here? Make a handsymbol for clickable stuff*/
+    --lumo-clickable-cursor: pointer;
+    /*This one works on u-authn-screen*/
+    background-color: #fafafa;
+    --unity-text-field-medium: 100%;
+    --unity-left-menu-navbar-color: #264899;
+}
